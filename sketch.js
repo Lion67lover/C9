@@ -15,10 +15,25 @@ function draw()
     lion.x = lion.x - 2;
   }
   if(keyDown("Up")){
-    lion.y = lion.y - 2;
+    lion.y = lion.y - 2; 
   }
   if(keyDown("Down")){
     lion.y = lion.y + 2;
+  }
+  if(keyDown("R")){
+    background("red");
+  }
+  if(keyDown("B")){
+    background("blue");
+  }
+  if(keyDown("G")){
+    background("green");
+  }
+  if(keyDown("Y")){
+    background("yellow");
+  }
+  if(keyDown("P")){
+    background("pink");
   }
   drawSprites();
 }
