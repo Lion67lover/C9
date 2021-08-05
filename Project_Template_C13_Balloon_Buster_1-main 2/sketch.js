@@ -1,5 +1,5 @@
-var bow , arrow,  background,count;
-var bowImage, arrowImage, green_balloonImage, red_balloonImage, pink_balloonImage ,blue_balloonImage, backgroundImage;
+var bow , arrow, background, count, red, blue, green, pink;
+var bowImage, arrowGroup, arrowImage, green_balloonImage, red_balloonImage, pink_balloonImage ,blue_balloonImage, backgroundImage, redB, greenB, blueB, pinkB;
 
 function preload(){
   
@@ -26,7 +26,11 @@ function setup() {
   bow = createSprite(380,220,20,50);
   bow.addImage(bowImage); 
   bow.scale = 1;
-  
+  redB = new Group();
+  blueB = new Group();
+  greenB = new Group();
+  pinkB = new Group();
+  arrowGroup = new Group();
 }
 
 function draw() {
@@ -60,7 +64,6 @@ function draw() {
   if(frameCount%150 == 0) {
     pinkBalloon();
   }
-
   drawSprites();
 }
 
